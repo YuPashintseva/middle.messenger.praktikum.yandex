@@ -1,3 +1,78 @@
+/*------------------------------------*/
+/*BASIC SETUP*/
+/*------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: white;
+    color:black;
+    font-family: 'Lato','Arial',sans-serif;
+}
+
+section {
+    margin: auto;
+    background-color: white;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 1px solid #1CCEB9;
+    background-color: transparent;
+    width: 200px;
+    padding-top: 30px;
+}
+
+input:focus {
+    outline: none !important;
+}
+
+.wrapper-section {
+    width: 300px;
+    height: 400px;
+    margin-top: 100px;
+    border-radius: 12px;
+    box-shadow: 1px 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 54px 50px 0 50px;
+}
+
+.wrapper h3 {
+    text-align: center;
+}
+
+.btn {
+    padding-top: 84px;
+}
+
+.btn button {
+    border-style: none;
+}
+
+.action_btn {
+    width: 100%;
+    height: 37px;
+    border-radius: 8px;
+}
+
+.auth_btn {
+    background-color: #1CCEB9;
+    color: white;
+}
+
+.reg_btn {
+    background-color: transparent;
+}
+
+/*
 h1 {
     color: red;
 }
@@ -5,4 +80,4 @@ $r: blue;
 
 h1 {
     color: $r;
-}
+}*/

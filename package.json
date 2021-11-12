@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "./node_modules/.bin/parcel index.html --port 3000",
-    "build": "./node_modules/.bin/parcel build index.html"
+    "build": "./node_modules/.bin/parcel build index.html --port 3000"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.0",
     "parcel": "*",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
     "postcss": "^8.3.11",
     "postcss-mixins": "^8.1.0",
     "postcss-nested": "^5.0.6",
