@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"src/modules/sum.js":[function(require,module,exports) {
+})({"../src/modules/sum.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -138,7 +138,7 @@ function sum() {
     return result + current;
   }, 0);
 }
-},{}],"node_modules/handlebars/dist/handlebars.runtime.js":[function(require,module,exports) {
+},{}],"../node_modules/handlebars/dist/handlebars.runtime.js":[function(require,module,exports) {
 var define;
 var global = arguments[3];
 /**!
@@ -2153,7 +2153,7 @@ THE SOFTWARE.
 });
 
 ;
-},{}],"src/index.hbs":[function(require,module,exports) {
+},{}],"../src/index.hbs":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2191,7 +2191,7 @@ var templateFunction = _handlebars.default.template({
 
 var _default = templateFunction;
 exports.default = _default;
-},{"handlebars/dist/handlebars.runtime":"node_modules/handlebars/dist/handlebars.runtime.js"}],"src/hello/hello.hbs":[function(require,module,exports) {
+},{"handlebars/dist/handlebars.runtime":"../node_modules/handlebars/dist/handlebars.runtime.js"}],"../src/hello/hello.hbs":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2241,7 +2241,7 @@ var templateFunction = _handlebars.default.template({
 
 var _default = templateFunction;
 exports.default = _default;
-},{"handlebars/dist/handlebars.runtime":"node_modules/handlebars/dist/handlebars.runtime.js"}],"src/hello/hello.js":[function(require,module,exports) {
+},{"handlebars/dist/handlebars.runtime":"../node_modules/handlebars/dist/handlebars.runtime.js"}],"../src/hello/hello.js":[function(require,module,exports) {
 "use strict";
 
 var _handlebars = _interopRequireDefault(require("handlebars/dist/handlebars.runtime"));
@@ -2251,11 +2251,11 @@ var _hello = _interopRequireDefault(require("./hello.hbs"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _handlebars.default.registerPartial('hello', _hello.default);
-},{"handlebars/dist/handlebars.runtime":"node_modules/handlebars/dist/handlebars.runtime.js","./hello.hbs":"src/hello/hello.hbs"}],"src/hello/index.js":[function(require,module,exports) {
+},{"handlebars/dist/handlebars.runtime":"../node_modules/handlebars/dist/handlebars.runtime.js","./hello.hbs":"../src/hello/hello.hbs"}],"../src/hello/index.js":[function(require,module,exports) {
 "use strict";
 
 require("./hello");
-},{"./hello":"src/hello/hello.js"}],"src/index.js":[function(require,module,exports) {
+},{"./hello":"../src/hello/hello.js"}],"../src/index.js":[function(require,module,exports) {
 "use strict";
 
 var _sum = require("./modules/sum");
@@ -2273,7 +2273,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     people: ["Yehuda Katz", "Alan Johnson", "Charles Jolley"]
   });
 });
-},{"./modules/sum":"src/modules/sum.js","./index.hbs":"src/index.hbs","./hello":"src/hello/index.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./modules/sum":"../src/modules/sum.js","./index.hbs":"../src/index.hbs","./hello":"../src/hello/index.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -2301,7 +2301,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36347" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35051" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -2477,5 +2477,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/index.js"], null)
-//# sourceMappingURL=/src.a2b27638.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","../src/index.js"], null)
+//# sourceMappingURL=/src.7ed060e2.js.map
